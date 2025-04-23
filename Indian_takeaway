@@ -1,0 +1,39 @@
+import React from "react";
+import "./order.css";
+
+export default function App() {
+  const menu = [
+    { name: "Butter Chicken", price: 129 },
+    { name: "Palak Paneer", price: 119 },
+    { name: "Chana Masala", price: 109 },
+    { name: "Tandoori Roti", price: 19 },
+  ];
+
+  const handleOrder = (dish) => {
+    alert(`You ordered ${dish.name} for ${dish.price} kr. Bon voyage! 🚆🍛`);
+  };
+
+  return (
+    <main className="trainfood-container">
+      <h1>🍛 Togmat: Indisk meny til reisen</h1>
+      <p className="tagline">
+        Bestill mat til reisen din – tilgjengelig før neste stasjon! 🛤️
+      </p>
+      <ul className="menu-list">
+        {menu.map((dish, index) => (
+          <li key={index} className="menu-item">
+            <span className="dish-name">{dish.name}</span>
+            <span className="dish-price">{dish.price} kr</span>
+            <button
+              className="order-button"
+              onClick={() => handleOrder(dish)}
+              aria-label={`Order ${dish.name}`}
+            >
+              Bestill
+            </button>
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
+}
