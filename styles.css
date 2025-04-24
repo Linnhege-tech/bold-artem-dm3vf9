@@ -1,0 +1,137 @@
+/* === STYLES FOR INDISK TAKEAWAY NETTSIDE === */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #eef6fb;
+  margin: 0;
+  padding: 0;
+  color: #003049;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #003049;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.dish-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.dish-name {
+  font-weight: bold;
+  flex: 1;
+  color: #003049;
+}
+
+.dish-price {
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+.order-button {
+  background-color: #ffffff;
+  color: #003049;
+  border: 2px solid #ff6600;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #ff6600;
+  color: #ffffff;
+}
+
+.confirmation {
+  background-color: #ccffcc;
+  border: 1px solid #99cc99;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+.cart-info {
+  border-top: 2px dashed #003049;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.cart-info p {
+  margin: 0.5rem 0;
+}
+
+.cart-icon {
+  margin-right: 0.5rem;
+}
+
+.checkout-button {
+  background-color: #003049;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.vipps-logo {
+  display: block;
+  width: 200px;
+  margin: 1rem auto 0;
+}
+
+.error-message {
+  background: #ffe6e6;
+  border: 1px solid #cc0000;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #cc0000;
+}
+
+.easy-read {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
